@@ -1,9 +1,9 @@
 A primeira instrução que aprendemos em JavaScript foi a alert. A funcionalidade desta instrução é exibir um popup com o texto que definirmos. Vejamos um exemplo:
 
-<meta charset="UTF-8">
-<script>
+<'meta charset="UTF-8"'>
+<'script'>
     alert("Primeira instrução JavaScript que aprendi");
-</script>
+<'/script'>
 Sobre alert, temos as seguintes afirmações:
 
 A) A instrução alert recebe um texto e todo texto em JavaScript é definido entre aspas. Exemplos de texto:

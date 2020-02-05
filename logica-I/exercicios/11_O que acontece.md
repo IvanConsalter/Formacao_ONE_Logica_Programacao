@@ -1,9 +1,9 @@
 Aprendemos que a instrução alert tem como funcionalidade a exibição de um alerta pop up. Sendo assim, temos o seguinte código:
 
-<meta charset="UTF-8">
-<script>
+<'meta charset="UTF-8"'>
+<'script'>
     alert();
-</script>
+<'/script'>
 Sobre a maneira pela qual a instrução alert foi escrita podemos dizer que:
 
 A) Nenhum popup será exibido

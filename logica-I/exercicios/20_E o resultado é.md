@@ -1,9 +1,9 @@
 Temos o seguinte código:
 
-<meta charset="UTF-8">
-<script>
+<'meta charset="UTF-8"'>
+<'script'>
     document.write("A" + "B" + 20 + 10 + "C" + (5 + 10) + "D");
-</script>
+<'/script'>
 Qual das opções abaixo possui o resultado que é exibido na tela?
 
 Resposta:

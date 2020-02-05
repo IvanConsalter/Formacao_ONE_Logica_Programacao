@@ -1,4 +1,4 @@
-Sobre o uso de tags, em HTML, podemos afirmar:
+Sobre o uso de tags, em 'HTML', podemos afirmar:
 
 A) Uma convenção muito usada é usar tags em letra maiúscula.
 
