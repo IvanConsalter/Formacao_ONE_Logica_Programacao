@@ -1,0 +1,28 @@
+Temos o seguinte código:
+
+<meta charset="UTF-8">
+<script>
+    document.write("A" + "B" + 20 + 10 + "C" + (5 + 10) + "D");
+</script>
+Qual das opções abaixo possui o resultado que é exibido na tela?
+
+Resposta:
+AB2010C15D
+
+
+Primeiro, vamos analisar a string, fora da instrução document.write:
+
+"A" + "B" + 20 + 10 + "C" + (5 + 10) + "D"
+Lembre-se que o que estiver entre parênteses será processado primeiro, sendo assim temos:
+
+"A" + "B" + 20 + 10 + "C" + 15 + "D"
+Agora ocorre o processo de concatenação que vai da esquerda para a direita resultando em AB2010C15D.
+
+Vejamos passo a passo o que acontece com as concatenações de "A" + "B" + 20 + 10 + "C" + (5 + 10) + "D":
+
+"AB" + 20 + 10 + "C" + 15 + "D"
+"AB20" + 10 + "C" + 15 + "D"
+"AB2010" + "C" + 15 + "D"
+"AB2010C" + 15 + "D"
+"AB2010C15" + "D"
+"AB2010C15D"
