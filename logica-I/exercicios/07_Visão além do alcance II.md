@@ -14,8 +14,8 @@ Veja que o amigo de Barney se equivocou quando declarou a tag <'meta'>.
 
 Ele fez assim:
 
-<'meta charset="UTT-8"'>
+<'meta charset="UTT-8"'><br>
 Contudo, o correto é:
 
-<'meta charset="UTF-8"'>
+<'meta charset="UTF-8"'><br>
 O correto é "UTF-8".

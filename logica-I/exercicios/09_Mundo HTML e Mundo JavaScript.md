@@ -10,4 +10,4 @@ Todo código escrito em JavaScript deve estar dentro da tag <'script'>. Vejamos 
     alert("Este é um popup em JavaScript");<br>
 <'/script'><br>
 Gostou?
-Pense que tudo que está entre <'script'> ... <'/script'> esta no mundo JavaScript. Sendo assim, o navegador interpretará aquele trecho de código como JavaScript. Tudo aquilo que estiver escrito fora de <'script'> .. <'/script'> é considerado mundo HTML e será interpretado como HTML
+Pense que tudo que está entre <'script'> ... <'/script'> esta no mundo JavaScript. Sendo assim, o navegador interpretará aquele trecho de código como JavaScript. Tudo aquilo que estiver escrito fora de <'script'> .. <'/script'> é considerado mundo HTML e será interpretado como HTML.

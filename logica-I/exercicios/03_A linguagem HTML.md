@@ -20,5 +20,5 @@ O conteúdo da TAG h1, isto é, o texto "Bem-vindo!" será exibido em destaque n
 
 Para criar links, usamos a tag a (âncora). Ela funciona da seguinte maneira:
 
-Visite <"a href=http://www.alura.com.br>Alura"><"/a">!
+Visite <'a href=http://www.alura.com.br>Alura<"/a"><br>
 Veja que a tag a possui como conteúdo "Alura". É este conteúdo que pode ser clicado fazendo com que o navegador carregue a página informada no atributo href da TAG>

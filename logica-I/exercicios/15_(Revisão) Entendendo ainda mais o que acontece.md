@@ -33,20 +33,20 @@ Nesse caso, o document.write recebe dentro de () o resultado da operação que �
 
 Quer mais uma prova de que document.write pertence ao mundo JavaScript e consegue escrever no mundo HTML? Vejamos mais um exemplo:
 
-<'meta charset="UTF-8"'>
-<'script'>
-    document.write("<'h1'>Seja bem-vindo<'/h1'>");
-<'/script'>
+<'meta charset="UTF-8"'><br>
+<'script'><br>
+    document.write("<'h1'>Seja bem-vindo<'/h1'>");<br>
+<'/script'><br>
 Veja que estamos escrevendo do mundo JavaScript no mundo HTML o texto "<'h1'>Seja bem-vindo</'h1'>". Se isso faz parte do mundo HTML, o navegador irá interpretar o código como HTML e colocará o texto em destaque pois usamos a TAG <'h1'>. O resultado é o mesmo que se tivéssemos escrito diretamente no mundo HTML:
 
-<'meta charset="UTF-8"''>
-<'h1'>Seja bem-vindo<'/h1'>
-<'script'>
-<'/script'>
+<'meta charset="UTF-8"''><br>
+<'h1'>Seja bem-vindo<'/h1'><br>
+<'script'><br>
+<'/script'><br>
 Por fim, não podemos escrever no mundo HTML instruções JavaScript:
 
-<'meta charset="UTF-8"'>
-document.write("Seja bem-vindo");
-<'script'>
-<'/script'>
+<'meta charset="UTF-8"'><br>
+document.write("Seja bem-vindo");<br>
+<'script'><br>
+<'/script'><br>
 O HTML não entende que deve exibir o texto passado pela instrução, ele imprime a instrução e não seu resultado! Sendo assim, fique atento sempre que escrever seu código.

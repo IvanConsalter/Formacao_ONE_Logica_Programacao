@@ -1,6 +1,6 @@
 Barney, aluno da Alura, iniciante no mundo da programação, partiu para a prática e escreveu seu primeiro código usando a linguagem HTML. Ele criou o arquivo teste.html com o seguinte conteúdo que está com erros. Analise:
 
-<'h1'>Um pequeno passo para quem já programa, um gigantesco salto para quem esta começando<'h1'>
+<'h1'>Um pequeno passo para quem já programa, um gigantesco salto para quem esta começando<'h1'><br>
 Este é meu primeiro programa!
 
 

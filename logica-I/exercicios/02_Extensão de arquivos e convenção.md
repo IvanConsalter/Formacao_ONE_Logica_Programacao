@@ -1,4 +1,4 @@
-Extensão de arquivos
+Extensão de arquivos.
 
 Você já utilizou um processador de texto ou planilha? Por exemplo, arquivos do Microsoft Word possuem a extensão .doc ou .docx. Assim, caso você tenha salvo um arquivo chamado "receitas", dentro do computador ele será "receitas.docx". A mesma coisa serve para as planilhas do Excel, por exemplo, uma planilha chamada "custos" quando salva no computador agrega a extensão .xls, sendo assim, o nome completo do arquivo é custos.xls.
 

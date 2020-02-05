@@ -4,4 +4,4 @@ Contudo, muito cuidado! Vamos supor que acidentalmente seu editor de texto não 
 
 Pode ser que o editor de texto escolhido não siga o padrão UTF e utilize outro qualquer que nem eu ou você sabemos.
 
-Mais do que os caracteres saírem certos ou errados, o importante é aprender a lógica de programação. O que estamos abordando serve para tornar sua experiência melhor e seu programa mais bonito. Afinal, quem não gosta de ver os acentos todos bonitinhos? 
+Mais do que os caracteres saírem certos ou errados, o importante é aprender a lógica de programação. O que estamos abordando serve para tornar sua experiência melhor e seu programa mais bonito.

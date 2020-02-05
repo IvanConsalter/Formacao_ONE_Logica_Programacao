@@ -20,7 +20,6 @@ Sendo assim, precisamos passar um parâmetro para a instrução. Se quisermos ex
 
 Sendo assim, temos a forma correta, mais uma vez:
 
-alert("Gostou do meu popup?");
-A forma errada:
+alert("Gostou do meu popup?");<br>
 
-alert "Gostou do meu popup?"
+A forma errada: alert "Gostou do meu popup?"

@@ -1,9 +1,9 @@
 Temos mais um código escrito por um aspirante a programador
 
-<'meta charset="UTF-8"'>
-<'script'>
-    alert("Eu chego lá!")
-<'/script'>
+<'meta charset="UTF-8"'><br>
+<'script'><br>
+    alert("Eu chego lá!")<br>
+<'/script'><br>
 Podemos afirmar que:
 
 A) Nada acontece, inclusive nenhum erro é exibido no debuger (console).

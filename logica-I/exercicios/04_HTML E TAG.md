@@ -14,7 +14,7 @@ A opção C é falso, pois a tag de abertura e fechamento são iguais, vejamos:
 
 Errado!
 
-<'h1'>Olá<'h1'>
+<'h1'>Olá<'h1'><br>
 O correto é usarmos na última tag um /:
 
 <'h1'>Olá<'/h1'>

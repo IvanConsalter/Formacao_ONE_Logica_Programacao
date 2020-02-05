@@ -1,4 +1,4 @@
-No passado, era preciso instalar os mais diversos programas, muitos deles pagos, para que fosse possível dar os primeiros passos no mundo da programação. Isso acabava espantando os candidatos à programação. A boa notícia é que as coisas mudaram!
+NO passado, era preciso instalar os mais diversos programas, muitos deles pagos, para que fosse possível dar os primeiros passos no mundo da programação. Isso acabava espantando os candidatos à programação. A boa notícia é que as coisas mudaram!
 
 Temos as seguintes afirmações sobre o parágrafo anterior:
 

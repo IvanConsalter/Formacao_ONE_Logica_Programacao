@@ -8,6 +8,6 @@ C) Podemos usar tanto tags em maiúscula ou em minúscula que não faz diferenç
 
 Sobre as afirmativas acima podemos dizer que:
 
-B e C são verdadeiras
+Resposta: B e C são verdadeiras
 
 A convenção é usarmos letras minúsculas para representar tags HTML. Contudo, não faz nenhuma diferença para o navegador se usarmos maiúsculo ou minúsculo.

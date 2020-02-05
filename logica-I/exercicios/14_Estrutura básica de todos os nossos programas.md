@@ -2,8 +2,8 @@ Você não precisa responder a este exercício sobre estrutura mínima de todos 
 
 Até o final do curso, para cada programa que você criar, é preciso criar um novo arquivo com extensão .html e adicionar a tag <'meta'> e <'script'> como abaixo:
 
-<'meta charset="UTF-8"'>
-<'script'>
+<'meta charset="UTF-8"'><br>
+<'script'><br>
 
-<'/script'>
+<'/script'><br>
 É por isso que ter em mente essas instruções é tão importante. A primeira, <'meta charset="UTF-8"'> resolve o problema de acentuação e a segunda define o mundo JavaScript, pois é entre a abertura da tag <'script'> e seu fechamento <'/script'> que escreveremos os códigos dinâmicos!
