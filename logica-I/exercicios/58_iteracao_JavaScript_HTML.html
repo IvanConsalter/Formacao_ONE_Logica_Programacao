@@ -1,0 +1,34 @@
+<!--Ao longo do treinamento aprendemos a capturar a entrada do usuário através da função prompt(). Não há nada de errado nisso para quem esta aprendendo lógica de programação, mas nem por isso vamos deixar de aprender algo um pouco mais sofisticado e melhor para o usuário, não é mesmo?
+
+A linguagem HTML possui tags para capturar a entrada do usuário, inclusive aquelas que representam botões.
+
+Vejamos um exemplo:
+
+<meta charset="UTF-8">
+
+<input />
+<button>Clique-me</button>
+
+<script>
+
+</script>
+Quando o código é carregado, é exibido para o usuário um campo de entrada (input) retangular para que ele insira dados e um botão (button). Contudo, o HTML é uma linguagem estática, tanto o input quanto o button são exibidos e nada acontece. A boa notícia é que o mundo JavaScript pode acessar as tags do mundo HTML . Isso significa que somos capazes de capturar o que o usuário digitou no input, inclusive, programar uma resposta para quando ele clicar no button.
+
+Qual das opções abaixo captura as TAG's input e button no mundo HTML?
+
+Resposta: -->
+
+<meta charset="UTF-8">
+
+<input />
+<button>Clique-me</button>
+
+<script>
+    var entrada = document.querySelector("input");
+    var botao = document.querySelector("button");
+</script>
+
+<!--Você aprendeu que através de document.write escrevemos na tela, mas o document sabe fazer mais coisas. É através de document.querySelector que podemos ir lá no mundo HTML e trazer o elemento para o mundo JavaScript para que possamos manipulá-lo. Mas cuidado, o correto é querySelector com S maiúsculo. Se por acaso você escrever com 's' minúsculo cometerá um erro de sintaxe.
+
+Continuando... O document.querySelector recebe um parâmetro o nome da tag que desejamos buscar do mundo HTML. Ele é mais poderoso do que você imagina e aceita receber outros tipos de parâmetros, mas para nosso treinamento, entender que se passarmos o nome de uma tag HTML ele nos devolverá a tag no mundo JavaScript é suficiente. Há outros jargões envolvidos nesse processo, mas não se preocupe. Você saberá todos eles se quiser continuar seus estudos na linguagem JavaScript.-->
+
