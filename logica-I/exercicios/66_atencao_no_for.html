@@ -1,0 +1,48 @@
+<!--Claudete está intrigada com o seguinte código de seu amigo Bruno:
+
+var letras = ['A', 'B', 'C', 'D'];
+
+for( var i = 0; i <= letras.length; i ++) {
+    alert(letras[i]);
+}
+A intenção do código é exibir um alerta para cada letra da lista. Contudo, vejam o resultado na sequência:
+
+A
+
+B
+
+C
+
+D
+
+undefined
+
+Veja que a lista possui apenas quatro elementos e que foram exibidos cinco alertas! Inclusive o valor do último foi undefined. Com certeza ele é um estranho no ninho.
+
+Ajude Claudete a corrigir o código de Bruno apontando o problema no seu código. 
+
+Resposta:
+
+O problema esta na condição do loop for. Veja que Bruno fez assim:
+
+i  <= letras.length
+Isso significa que a variável i será incrementada de 0 até 4, o que não esta correto. Se temos 4 elementos da lista, os índices devem ir de 0 a 3, pois o último índice é o tamanho da lista menos um. Para resolver basta usarmos < no lugar de <=:
+
+var letras = ['A', 'B', 'C', 'D'];
+
+for( var i = 0; i < letras.length; i ++) {
+    alert(letras[i]);
+}-->
+
+<meta charset="UTF-8">
+
+<script>
+	
+	var letras = ['A', 'B', 'C', 'D'];
+
+	for( var i = 0; i < letras.length; i ++) {
+		alert(letras[i]);
+	}
+
+</script>
+

@@ -1,0 +1,34 @@
+<!--Ao longo do curso, aprendemos a lidar com tipos diferentes como, texto, número e booleano (ex.: 'true' ou 'false'). Exemplos desses tipos são:
+
+var nome = "Regina"; // texto, ou tecnicamente falando, uma string
+
+var idade = 22; // número
+
+var temCarteira = true; // booleano
+
+Por fim, aprendemos sobre o tipo de dado chamado array. Ele permite que uma variável possua vários valores.
+
+Qual das opções abaixo declara corretamente um array?
+
+Resposta:
+
+var coisas = ["Gisele", 12, true];
+
+
+Todo array é declarado com colchetes, o famoso []. Contudo se tivermos uma declaração desta forma var coisas = []; temos um array, ou seja, uma lista vazia sem qualquer elemento.
+
+Podemos, no momento da declaração de um array, adicionar elementos. Esses elementos podem ser de qualquer tipo conhecido do JavaScript:
+
+var coisas = ["Gisele", 12, true];
+Temos como primeiro item do Array uma String, o segundo um número e o último um boleano.-->
+
+<meta charset="UTF-8">
+
+<script>
+	
+	var coisas = ["Gisele", 12, true];
+
+	for(var i = 0; i < coisas.length; i++){
+		document.write(coisas[i] + "<br>");
+	}
+</script>

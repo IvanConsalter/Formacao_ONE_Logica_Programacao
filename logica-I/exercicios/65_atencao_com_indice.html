@@ -1,0 +1,48 @@
+<!--Na prova de estrutura de dados, Jiba tinha a seguinte lista:
+
+var jogadores = ["Saladino", "Cage", "Xur", "Rayson"];
+O exercício pedia que ele exibisse um alerta para cada item da lista e ele a implementou da seguinte forma:
+
+for( var i = 1; i < jogadores.length; i++) {
+
+    alert(jogadores[i]);
+}
+Apesar de acreditar que seu código está correto, ele ganhou nota 7, pois cometeu uma gafe. Seu professor disse que ele exibiu todos os nomes, exceto "Saladino".
+
+Qual é o problema do código de Jiba? Como você pode alterá-lo para que ele exiba todos os nomes da lista sem deixar nenhum de fora?
+
+Resposta:
+
+Vamos observar o código de Jiba:
+
+var jogadores = ["Saladino", "Cage", "Xur", "Rayson"];
+
+for( var i = 1; i < jogadores.length; i++) {
+
+    alert(jogadores[i]);
+}
+Note que a variável de incremento i foi iniciada com valor 1, mas deveria ser 0. Deve ser zero, pois ela é usada como índice para acessarmos cada elemento da lista, uma vez que o primeiro elemento possui índice 0. Foi por isso que "Saladino" ficou de fora!-->
+
+<meta charset="UTF-8">
+
+<script>
+
+	var jogadores = ["Saladino", "Cage", "Xur", "Rayson"];
+
+	for( var i = 0; i < jogadores.length; i++) {
+
+		alert(jogadores[i]);
+	}
+
+	/*
+	var jogadores = ["Saladino", "Cage", "Xur", "Rayson"];
+
+	for( var i = 1; i <= jogadores.length; i++) {
+
+		alert(jogadores[i]);
+	}
+
+	FUNCIONA TAMBEM, MAS O INDICADO É INICIAR A VARIAVEL COM "0", QUANDO FALAMOS DE ARRAY
+	*/
+
+</script>

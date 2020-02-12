@@ -1,0 +1,24 @@
+<!--Tânia escreveu um pequeno trecho de código que imprime todas as parcelas do cartão que ainda precisa pagar:
+
+var parcelas = [10.40, 40.00, 100.18, 200];
+for(var i = 0; i < parcelas.lenght; i = i + 1) {
+    document.write(parcelas[i]);
+}
+document.write("FIM");
+O problema é que o trecho de código acima exibe apenas "FIM", ou seja, parece que nem chega a executar a instrução dentro do for.
+
+Qual é o problema do código anterior?
+
+Resposta:
+O problema é que a propriedade que esta sendo acessada na condição do for não existe. Está escrito parcelas.lenght e o correto é parcelas.length, terminando com th. Não se engane, esse é um erro comum até mesmo entre os mais experientes.-->
+
+<meta charset="UTF-8">
+
+<script>
+	
+	var parcelas = [10.40, 40.00, 100.18, 200];
+	for(var i = 0; i < parcelas.length; i = i + 1) {
+		document.write(parcelas[i] + "<br>");
+	}
+	document.write("FIM");
+</script>
