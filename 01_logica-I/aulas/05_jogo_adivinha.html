@@ -12,6 +12,7 @@
 	}
 
 	var tentativa = 1;
+	var tentativasRestantes = 2;
 	var numeroPensado = Math.round(Math.random() * 10);
 
 	while(tentativa <= 3){
@@ -24,13 +25,19 @@
 		}
 		else{
 			alert("Você ERROU!");
+			if(tentativasRestantes == 0){
+				break;
+			}
+			alert("Você tem mais " + tentativasRestantes + " tentativas!");
+
 		}
 
 		tentativa++;
+		tentativasRestantes--;
 
 	}
 
-	mostra("FIM");	
+	mostra("FIM DE JOGO");	
 	
 
 </script>
