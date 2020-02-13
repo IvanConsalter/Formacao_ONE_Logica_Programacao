@@ -1,0 +1,31 @@
+<canvas width="350" height="300"></canvas>
+
+<script>
+	
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+	function criaRetangulo(x1, y1, x2, y2, color){
+		pincel.fillStyle = color;
+		pincel.fillRect(x1, y1, x2, y2);
+	}
+
+	//cabeça 
+	criaRetangulo(0, 0, 350, 300, 'Darkgreen');
+
+	//parte da boca esquerda
+	criaRetangulo(100, 190, 40, 110, 'black');
+
+	//parte da boca direta
+	criaRetangulo(210, 190, 40, 110, 'black');
+
+	//olhos esquerdo
+	criaRetangulo(50, 60, 90, 90, 'black');
+
+	//olhos direito
+	criaRetangulo(210, 60, 90, 90, 'black');
+	
+	//nariz
+	criaRetangulo(140, 150, 70, 100, 'black');
+
+</script>
