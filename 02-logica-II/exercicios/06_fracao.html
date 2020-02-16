@@ -1,0 +1,30 @@
+<!--Escreva uma função desenhaQuadrado, que recebe x, y, o tamanho e a cor. Cada quadrado desenhado deve utilizar um stroke.-->
+
+<canvas width="600" height="200"></canvas>
+
+<script>
+	
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+	var xinicial = 0;
+	var yinicial = 50;
+	var tamanhoQuadrado = 100;
+
+	function desenhaQuadrado(xi, yi, tamanho, cor){
+
+		pincel.fillStyle = cor;
+		pincel.fillRect(xi,yi,tamanho,tamanho);
+		pincel.strokeStyle = 'black';
+		pincel.strokeRect(xi,yi,tamanho,tamanho);
+
+	}
+	
+	pincel.fillStyle = 'lightgrey';
+	pincel.fillRect(0, 0, 600, 200);
+	desenhaQuadrado((xinicial+tamanhoQuadrado), yinicial, tamanhoQuadrado, 'darkgreen');
+	desenhaQuadrado((xinicial+2*tamanhoQuadrado), yinicial, tamanhoQuadrado, 'darkgreen');
+	desenhaQuadrado((xinicial+3*tamanhoQuadrado), yinicial, tamanhoQuadrado, 'white');
+	desenhaQuadrado((xinicial+4*tamanhoQuadrado), yinicial, tamanhoQuadrado, 'darkgreen');
+
+</script>

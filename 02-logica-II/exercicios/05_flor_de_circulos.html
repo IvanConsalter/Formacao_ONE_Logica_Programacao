@@ -1,0 +1,28 @@
+<!--Faça uma função permite desenhar na tela um círculo no eixo X e Y, inclusive permite ainda definir a sua cor.
+
+	Faça uso da função para desenhar uma flor-->
+
+	<canvas width="300" height="300"></canvas>
+
+	<script>
+
+		var tela = document.querySelector('canvas');
+		var pincel = tela.getContext('2d');
+		var raio = 10;
+		var diametro = 2*raio;
+		function desenhaCirculo(x, y, raio, cor){
+
+			pincel.fillStyle = cor;
+			pincel.beginPath();
+			pincel.arc(x, y, raio, 0, 2*Math.PI);
+			pincel.fill();
+
+		}
+
+		desenhaCirculo(150, 150, raio, 'black');
+		desenhaCirculo(150+diametro, 150, raio, 'orange');
+		desenhaCirculo(150-diametro, 150, raio, 'yellow');
+		desenhaCirculo(150, 150+diametro, raio, 'green');
+		desenhaCirculo(150, 150-diametro, raio, 'pink');
+
+	</script>
