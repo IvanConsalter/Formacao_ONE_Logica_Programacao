@@ -1,0 +1,47 @@
+<!--Exercício
+Agora que já recapitulamos o que fizemos neste capítulo, tenho uma proposta de mudança do código acima bem interessante e quero que você quebre a cabeça para implementá-la. Fique tranquilo, pois clicando em Continuar você terá acesso a uma solução explicada do início ao fim. Sua solução pode ser idêntica ou parecida ou quem sabe revolucionária. Preparado?
+
+Vamos permitir que o usuário altere a cor da bolinha que é desenhada na tela. As cores serão obrigatoriamente blue, red e green. Veja que temos uma lista de cores e isso deve remetê-lo à aula de array do primeiro módulo do curso.
+
+Como essa escolha será feita? A cada clique do botão DIREITO do mouse, a cor padrão, que é blue, deverá se tornar red. Se o usuário clicar mais uma vez com o botão DIREITO, a cor escolhida deverá ser green, nessa ordem. Por fim, se clicarmos novamente, voltamos para a cor blue e repetirmos a ordem de seleção de cores.
+
+Obs: com o botão ESQUERDO faremos os cliques para as bolinhas aparecerem.
+
+É claro que lhe darei uma dica, pois não ensinei a você a associar a execução de uma função ao clique do botão direito do mouse. O evento responsável por isso é o oncontextmenu.-->
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    var cores = ['blue', 'red', 'green'];
+    var posicaoCor = 0;
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(event) {
+
+        var x = event.pageX - tela.offsetLeft;
+        var y = event.pageY - tela.offsetTop;
+        pincel.fillStyle = cores[posicaoCor];
+        pincel.beginPath();
+        pincel.arc(x, y, 10, 0, 2 * 3.14);
+        pincel.fill();
+        console.log(x + ',' + y);
+    }
+
+    function mudaCor() {
+
+        posicaoCor++;
+        if(posicaoCor >= cores.length){
+            posicaoCor = 0;
+        }
+        cores[posicaoCor];
+        return false;
+
+    }
+
+    tela.oncontextmenu = mudaCor;
+    tela.onclick = desenhaCirculo;
+
+</script>

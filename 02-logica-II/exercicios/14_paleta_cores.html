@@ -1,0 +1,49 @@
+<!--Quando você escolhe uma cor, o input sabe a cor que você guardou e podemos perguntar para ele.
+
+Lembra do primeiro módulo como conseguíamos buscar no mundo HTML um input e extrair seu valor? Se conseguirmos fazer isso, podemos usar o valor na propriedade pincel.fillStyle na hora de desenhar o nosso círculo.
+
+A ideia desse exercício é você recordar o módulo anterior e tentar conciliar o que aprendeu neste exercício. Dessa vez, não darei muitas dicas.-->
+
+<canvas width="600" height="400"></canvas>
+<br>
+Escolha uma cor <input type="color" name="">
+
+<script>
+    var tela = document.querySelector('canvas');
+    var cor = document.querySelector('input');
+    var pincel = tela.getContext('2d');
+
+    var desenha = false;
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaComMouse(evento) {
+
+        if(desenha){
+            var x = evento.pageX - tela.offsetLeft;
+            var y = evento.pageY - tela.offsetTop;
+            pincel.fillStyle = cor.value;
+            pincel.beginPath();
+            pincel.arc(x, y, 10, 0, 2 * 3.14);
+            pincel.fill();
+        }
+
+
+    }
+
+    function ativaDesenho(){
+
+        desenha = true;
+    }
+
+    function desativaDesenho(){
+
+        desenha = false;
+    }
+
+    tela.onmousedown = ativaDesenho;
+    tela.onmouseup = desativaDesenho;
+    tela.onmousemove = desenhaComMouse;
+
+</script>

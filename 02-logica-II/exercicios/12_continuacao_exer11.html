@@ -1,0 +1,42 @@
+<!--Você deve ter ficado tão incomodado quanto eu, porque a bolinha só cresce até tomar conta da tela inteira. Uma das coisas que podemos melhorar é limitar o tamanho de crescimento das bolinhas, ou seja, quero combinar com você que o raio não pode ultrapassar 40. Além disso, se o usuário clicar na tela com a tecla ALT pressionada, o raio deve diminuir 5. Para saber se a tecla ALT está pressionada, fazemos evento.altKey. ATENÇÃO: o decremento do raio deverá ser de 5 em 5 e o tamanho mínimo da bolinha deve ser de 10 que é o tamanho original.-->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    var raio = 10;
+
+    pincel.fillStyle = 'gray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(event) {
+
+        var posX = event.pageX - tela.offsetLeft;
+        var posY = event.pageY - tela.offsetTop;
+
+        if (event.shiftKey) {
+           if(raio <= 40){
+            raio += 10;
+           }
+        }
+
+        if(event.altKey){
+            if(raio > 10){
+                raio -= 5;
+            }
+        }
+
+
+
+        pincel.fillStyle = 'blue';
+        pincel.beginPath();
+        pincel.arc(posX, posY, raio, 0, 2 * 3.14);
+        pincel.fill();
+
+    }
+
+    tela.onclick = desenhaCirculo;
+
+</script>
