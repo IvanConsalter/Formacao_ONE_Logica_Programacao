@@ -1,0 +1,59 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+	var x = 10;
+	var y = 10;
+
+	//codigos teclado
+	var esquerda = 37;
+	var cima = 38;
+	var direita = 39;
+	var baixo = 40;
+
+	//taxa incremento
+	var taxa = 10;
+
+	function desenhaCirculo(x, y){
+
+		pincel.fillStyle = 'white';
+		pincel.beginPath();
+		pincel.arc(x, y, 10, 0, 2*Math.PI);
+		pincel.fill();
+
+	}
+
+	function limpaTela(){
+		pincel.fillStyle = 'blue';
+		pincel.fillRect(0, 0, 600, 400);
+	}
+
+	setInterval(function(){
+
+		limpaTela();
+		desenhaCirculo(x, y);
+
+	}, 20);
+
+	function leDoTeclado(event){
+
+		if(event.keyCode == esquerda){
+			x -= taxa;
+		}
+		if(event.keyCode == direita){
+			x += taxa;
+		}
+		if(event.keyCode == cima){
+			y -= taxa;
+		}
+		if(event.keyCode == baixo) {
+			y += taxa;
+		}
+
+	}
+
+	document.onkeydown = leDoTeclado;
+</script>
