@@ -1,0 +1,23 @@
+body {
+	background: #CCCCCC;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+strong {
+	font-size: 18px;
+}
+
+.missao {
+	font-size: 18px;
+}
+
+em strong {
+	color: red;
+}
