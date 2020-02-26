@@ -2,22 +2,26 @@ body {
 	background: #CCCCCC;
 }
 
-h1 {
+body img {
+	width: 100%;
+}
+
+body h1 {
 	text-align: center;
 }
 
-p {
+body p {
 	text-align: center;
 }
 
-strong {
+body strong {
 	font-size: 18px;
 }
 
-.missao {
+body .missao {
 	font-size: 18px;
 }
 
-em strong {
+body em strong {
 	color: red;
 }
