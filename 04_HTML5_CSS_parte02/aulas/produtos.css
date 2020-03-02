@@ -20,6 +20,12 @@ header nav li{
 	margin-left: 20px;
 }
 
+header nav li a:hover {
+	color: #E98719;
+	text-decoration: underline;
+	font-size: 24px;
+}
+
 header nav a {
 	font-size: 22px;
 	text-transform: uppercase;
@@ -42,6 +48,26 @@ main .produtos li {
 	margin: 0 1.5%;
 	padding: 30px 20px;
 	box-sizing: border-box;
+	border: 2px solid #000;
+	border-radius: 10px;
+}
+
+main .produtos li:hover {
+	border-color: #E98719;
+
+}
+
+main .produtos li:active {
+	border-color: #088C19;
+}
+
+main .produtos .title {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+main .produtos li:hover h2 {
+	font-size: 32px; 
 }
 
 main .produto-descricao {
@@ -54,7 +80,17 @@ main .produto-preco {
 	margin-top: 10px;
 }
 
+footer {
+	background-image: url(imagens/bg.jpg);
+	text-align: center;
+	padding: 30px 0;
+}
 
+footer .copyright {
+	color: #FFF;
+	font-style: italic;
+	margin: 20px 0 0;
+}
 
 
 
