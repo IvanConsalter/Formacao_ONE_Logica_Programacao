@@ -6,7 +6,6 @@ function exibeMensagemErro(erros) {
 
       var li = document.createElement('li');
       li.textContent = erro;
-      li.classList.add('mensagens-erro');
       ul.appendChild(li);
 
    });
@@ -105,5 +104,7 @@ botaoAdicionar.addEventListener('click', function(event) {
 
    var mensagensErro = document.querySelector('#mensagens-erro');
    mensagensErro.innerHTML = "";
+
+   console.log(trPaciente)
 
 });

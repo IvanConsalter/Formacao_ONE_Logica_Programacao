@@ -8,7 +8,7 @@ tabela.addEventListener('dblclick', function(event){
 
 		if(event.target.tagName == 'TD'){
 
-		event.target.parentNode.remove();
+			event.target.parentNode.remove();
 
 		}
 	}, 500);
